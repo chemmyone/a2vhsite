@@ -1,0 +1,54 @@
+{
+  "name": "a2vhsite",
+  "version": "1.0.0",
+  "description": "An interactive CLI for creating Apache2's virtual host files.",
+  "keywords": [
+    "apache2",
+    "virtualhost",
+    "apache",
+    "cli",
+    "host",
+    "virtual"
+  ],
+  "bugs": {
+    "url": "https://github.com/danielhickman/a2vhsite/issues"
+  },
+  "license": "MIT",
+  "author": "Daniel Hickman <danielhickman9@gmail.com> (https://danielhickman.com)",
+  "main": "./lib/index.js",
+  "bin": {
+    "a2vhsite": "./bin/a2vhsite.js"
+  },
+  "directories": {
+    "bin": "./bin",
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielhickman/a2vhsite.git"
+  },
+  "scripts": {
+    "test": "mocha test",
+    "lint": "node ./node_modules/eslint/bin/eslint **/*.js"
+  },
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "mkdirp": "^0.5.1",
+    "vorpal": "^1.12.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.11.0",
+    "eslint-plugin-mocha": "^4.11.0",
+    "eslint-plugin-node": "^5.2.1",
+    "mocha": "^4.0.1",
+    "proxyquire": "^1.8.0",
+    "rewire": "^2.5.1",
+    "rewire-global": "^1.0.11",
+    "sinon": "^4.1.2"
+  },
+  "engines": {
+    "node": ">=7.0.0"
+  }
+}
