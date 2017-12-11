@@ -2,7 +2,7 @@
 [![npm version](https://img.shields.io/npm/v/a2vhsite.svg)](https://www.npmjs.com/package/a2vhsite)
 [![Travis](https://img.shields.io/travis/danielhickman/a2vhsite.svg)](https://travis-ci.org/danielhickman/a2vhsite)
 [![dependencies: vorpal | mkdirp | chalk](https://img.shields.io/badge/dependencies-vorpal%20%7C%20mkdirp%20%7C%20chalk-lightgrey.svg)](https://github.com/danielhickman/a2vhsite/network/dependencies)
-[![license](https://img.shields.io/github/license/danielhickman/a2vhsite.svg)]()
+[![license](https://img.shields.io/github/license/danielhickman/a2vhsite.svg)](/LICENSE)
 
 ## Description
 An interactive CLI for creating Apache2's virtual host files.
