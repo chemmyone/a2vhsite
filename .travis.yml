@@ -1,21 +1,22 @@
 language: node_js
 node_js:
-    - "node"
-    - "7"
+- node
+- '7'
 cache:
-    directories:
-        - "node_modules"
+  directories:
+  - node_modules
 before_install:
-  # Force npm version 5.x for node versions before 9.x
 - npm install -g npm@5
 - npm install -g greenkeeper-lockfile@1
 install:
-    - npm install
+- npm install
 before_script:
-  - greenkeeper-lockfile-update
+- greenkeeper-lockfile-update
 script:
-    - npm test
-    - npm run lint
+- npm test
+- npm run lint
 after_script:
-    # Only the newest node version job will upload the lockfile
-  - greenkeeper-lockfile-upload
+- greenkeeper-lockfile-upload
+env:
+  global:
+    secure: XzY3EtAFSj23sldU8QzBQR0tPOwEScErW9lYyw4qK6wtbRLp0pi644eaEmyzPmDOBXDhI51g3gbIh56E0yKw5FXdkX1VlZmU68ft0y8eGpHNw1+p0GH4oJ88Ovdj1qfgW6n7BXarfRvqYYInmCkQuelp++hiqGmt6rq70dqo3df/J+V+0icZCCJxsuJaJV7KkREwU3J0IclHTk7C+QxtnjSwJgVX9XsBUI9oo3pu/GSc5pAS9Ec/JC2AwVvpaozOh7nH3gSwS5lQT+0G3/sGsPyTinYMGNikacdlQgV0a8CuDDOBh2Rvh0xQ+4LrQVncwHmwInurcuFrQrqcelXLH41sbxh/1VRNoSqgM9ZmL/QVndvVygC2/6MfgbiBWJf1ejZFMz+D/ucYKgIVOD0CVy+zn4Mfr9jGeZjiDgRkJvy7Z087sihLt22VKEf8MSYype/c7eFQs/AX7GFD2a7bjIKS0zaMGzZItl9U7V8E/Ba8jdAUYnvU3YbSxFjaK4/GKe6yknyr3JmKfLiNHP3URnPCJyyDVKIV4Kv0QYndKxqgy5SSYQ7V2NYYWHujs9Si3cD4HKKOmwj+C4NnnOjd5UpZAdnGH3ce4NLbhUEqY/1PF+7jnl3dsW4KGdey0pcKME6CK0Lur6jQ/IOlIAG1EzEh255qoX62BKnplL/PO8w=
