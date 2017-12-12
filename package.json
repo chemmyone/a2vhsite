@@ -50,5 +50,10 @@
   },
   "engines": {
     "node": ">=7.0.0"
+  },
+  "greenkeeper": {
+    "ignore": [
+      "rewire"
+    ]
   }
 }
