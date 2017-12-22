@@ -9,6 +9,7 @@ An interactive CLI for creating Apache2's virtual host files.
 
 Decrease frustration with server management, use an interactive walkthrough of common directives; a template for advanced configurations; or command line arguments to control your Apache2 VirtualHost .conf files! Learn more about the individual directives [here](https://httpd.apache.org/docs/current/vhosts/) and [here](https://httpd.apache.org/docs/2.4/mod/core.html).
 
+
 ## Prerequisites
 - [Node.js](https://nodejs.org/en/download/) - recent version required for some ES6 features
 - Apache2 - if reloading and enabling

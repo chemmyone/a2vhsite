@@ -31,6 +31,7 @@ module.exports = {
 		"no-var": [
 			"error"
 		],
+		// Use vorpal.log or equivalent
 		"no-console": [
 			"warn"
 		],
@@ -92,4 +93,4 @@ module.exports = {
 			}
 		}
 	]
-}
+};
