@@ -47,7 +47,7 @@ describe("core", function() {
 		*/
 		spies["child_process.spawnSync"] = sinon.spy();
 		stubs["child_process"] =  {
-			"spawnSync": function() {
+			spawnSync() {
 				spies["child_process.spawnSync"](...arguments);
 			},
 			"@noCallThru": true // don't allow the original to be called or required

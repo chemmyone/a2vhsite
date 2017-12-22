@@ -85,7 +85,7 @@ describe("a2vhsite", function() {
 				}
 			},
 			"mkdir": spies["core.mkdir"],
-			"reload": function() {
+			reload() {
 				spies["core.reload"](...arguments);
 
 				return [fakes.systemOutput, "service", ["apache2", "reload"]];
@@ -116,7 +116,7 @@ describe("a2vhsite", function() {
 		*/
 		// Empty commandInstance
 		a2vhsite.__set__("commandInstance", {
-			"log": function() {}
+			log() {}
 		});
 
 
