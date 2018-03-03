@@ -231,11 +231,11 @@ describe("a2vhsite", function() {
 
 	describe("createConfigs()", function() {
 		beforeEach("reset spys", function() {
-			spies["core.Config"].reset();
-			spies["core.Config.save"].reset();
-			spies["core.Config.enable"].reset();
-			spies["core.reload"].reset();
-			spies["core.mkdir"].reset();
+			spies["core.Config"].resetHistory();
+			spies["core.Config.save"].resetHistory();
+			spies["core.Config.enable"].resetHistory();
+			spies["core.reload"].resetHistory();
+			spies["core.mkdir"].resetHistory();
 		});
 
 		context("when options are their defaults", function() {

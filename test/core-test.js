@@ -157,7 +157,7 @@ describe("core", function() {
 
 		describe("enable()", function() {
 			it("should run a subprocess to enable domain", function() {
-				spies["child_process.spawnSync"].reset();
+				spies["child_process.spawnSync"].resetHistory();
 				new core.Config(fakes.domain, {
 					"template": real.template
 				}).enable();
@@ -202,7 +202,7 @@ describe("core", function() {
 
 	describe("reload()", function() {
 		it("should run a subprocess to reload apache2", function() {
-			spies["child_process.spawnSync"].reset();
+			spies["child_process.spawnSync"].resetHistory();
 			core.reload();
 
 			expect(
