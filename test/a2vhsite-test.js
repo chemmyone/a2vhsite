@@ -40,6 +40,9 @@ describe("a2vhsite", function() {
 	let a2vhsite;
 
 	before(function() {
+		// Don't timeout this hook
+		this.timeout(0);
+
 		/*
 			Proxyquire - stubs, spies, fakes, dummies
 		*/
