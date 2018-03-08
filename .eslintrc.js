@@ -3,8 +3,12 @@ module.exports = {
 		"es6": true,
 		"node": true
 	},
-	"plugins": ["node"],
-	"extends": ["eslint:recommended", "plugin:node/recommended"],
+	"plugins": [
+		"node"
+	],
+	"extends": [
+		"eslint:recommended", "plugin:node/recommended"
+	],
 	"parserOptions": {
 		"sourceType": "module"
 	},
@@ -28,20 +32,14 @@ module.exports = {
 			"error",
 			"always"
 		],
-		"no-var": [
-			"error"
-		],
+		"no-var": "error",
 		// Use vorpal.log or equivalent
-		"no-console": [
-			"warn"
-		],
+		"no-console": "warn",
 		"object-shorthand": [
 			"warn",
 			"always"
 		],
-		"no-throw-literal": [
-			"error"
-		],
+		"no-throw-literal": "error",
 		"quote-props": [
 			"warn",
 			"as-needed",
@@ -68,8 +66,6 @@ module.exports = {
 				"test/*.js"
 			],
 			"env": {
-				"es6": true,
-				"node": true,
 				"mocha": true
 			},
 			"plugins": [

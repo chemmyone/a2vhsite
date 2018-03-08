@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "An interactive CLI for creating Apache2's virtual host files.",
   "keywords": [
-    "apache2",
-    "virtualhost",
     "apache",
+    "apache2",
     "cli",
     "host",
-    "virtual"
+    "virtual",
+    "virtualhost"
   ],
   "bugs": {
     "url": "https://github.com/danielhickman/a2vhsite/issues"
@@ -20,8 +20,8 @@
     "a2vhsite": "./bin/a2vhsite.js"
   },
   "directories": {
-    "bin": "./bin",
     "lib": "./lib",
+    "bin": "./bin",
     "test": "./test"
   },
   "repository": {
@@ -29,8 +29,8 @@
     "url": "https://github.com/danielhickman/a2vhsite.git"
   },
   "scripts": {
-    "test": "mocha test",
-    "lint": "node ./node_modules/eslint/bin/eslint **/*.js"
+    "lint": "eslint --ext .js ./",
+    "test": "mocha test"
   },
   "dependencies": {
     "chalk": "^2.3.0",
@@ -51,6 +51,7 @@
   "engines": {
     "node": ">=7.0.0"
   },
+  "preferGlobal": true,
   "greenkeeper": {
     "ignore": [
       "rewire"
